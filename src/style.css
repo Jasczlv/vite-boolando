@@ -1,0 +1,177 @@
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+menu,
+ul,
+ol {
+  list-style: none;
+}
+
+/* utility */
+
+.block {
+  display: block;
+}
+
+.inblock {
+  display: inline-block;
+}
+
+.inline {
+  display: inline;
+}
+
+.relative {
+  position: relative;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.col-4 {
+  max-width: calc(4 * 100% / 12);
+}
+
+.row {
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.container {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.margin-bottom100 {
+  margin-bottom: 100px;
+}
+
+/* header */
+
+.header-container {
+  background-color: orange;
+  max-height: 20px;
+  padding: 15px;
+}
+
+.header-container .container {
+  max-height: 100%;
+}
+
+.footer-container {
+  max-width: 100%;
+  background-color: black;
+  color: white;
+  height: 100px;
+}
+
+.footer-container .row {
+  height: 100px;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .row div {
+  text-align: center;
+  line-height: 1px;
+}
+
+header .row {
+  justify-content: space-between;
+}
+
+.presconto {
+  color: black;
+}
+
+.sost {
+  font-size: 20px;
+  background-color: Green;
+  color: white;
+}
+
+.sconto {
+  font-size: 20px;
+  background-color: red;
+  color: white;
+}
+
+.preferiti {
+  font-size: 30px;
+  top: 15px;
+  right: 0px;
+  color: red;
+  background-color: white;
+  width: 40px;
+  text-align: center;
+}
+
+.img-smile {
+  height: 400px;
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+.img-cursed {
+  position: absolute;
+  height: 400px;
+  width: 300px;
+  margin-bottom: 10px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.prezzo {
+  font-size: 14px;
+  color: red;
+}
+
+.Marca {
+  font-size: 12px;
+}
+
+.Nome-item {
+  font-size: 20px;
+}
+
+.lable-position {
+  bottom: 50px;
+  left: 10px;
+}
+
+.card {
+  padding: 5px;
+}
+
+.card img.img-smile:hover {
+  opacity: 0;
+  transition: 1500ms;
+}
+
+/* utility */
