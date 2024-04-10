@@ -25,8 +25,8 @@ export default {};
         <div class="card col-4 relative">
           <div class="relative">
             <div class="block">
-              <img class="img-smile" src="./img/Phase_1.png" alt="" />
-              <img class="img-cursed" src="./img/Phase_2.jpg" alt="" />
+              <img class="img-smile" src="../assets/Phase_1.png" alt="" />
+              <img class="img-cursed" src="../assets/Phase_2.jpg" alt="" />
             </div>
             <div class="absolute badge preferiti">&hearts;</div>
             <div class="lable-position absolute">
@@ -43,8 +43,8 @@ export default {};
         <div class="card col-4 relative">
           <div class="relative">
             <div class="block">
-              <img class="img-smile" src="./img/Phase_1.png" alt="" />
-              <img class="img-cursed" src="./img/Phase_2.jpg" alt="" />
+              <img class="img-smile" src="../assets/Phase_1.png" alt="" />
+              <img class="img-cursed" src="../assets/Phase_2.jpg" alt="" />
             </div>
             <div class="absolute badge preferiti">&hearts;</div>
             <div class="lable-position absolute">
@@ -61,8 +61,8 @@ export default {};
         <div class="card col-4 relative">
           <div class="relative">
             <div class="block">
-              <img class="img-smile" src="./img/Phase_1.png" alt="" />
-              <img class="img-cursed" src="./img/Phase_2.jpg" alt="" />
+              <img class="img-smile" src="../assets/Phase_1.png" alt="" />
+              <img class="img-cursed" src="../assets/Phase_2.jpg" alt="" />
             </div>
             <div class="absolute badge preferiti">&hearts;</div>
             <div class="lable-position absolute">
@@ -79,8 +79,8 @@ export default {};
         <div class="card col-4 relative">
           <div class="relative">
             <div class="block">
-              <img class="img-smile" src="./img/Phase_1.png" alt="" />
-              <img class="img-cursed" src="./img/Phase_2.jpg" alt="" />
+              <img class="img-smile" src="../assets/Phase_1.png" alt="" />
+              <img class="img-cursed" src="../assets/Phase_2.jpg" alt="" />
             </div>
             <div class="absolute badge preferiti">&hearts;</div>
             <div class="lable-position absolute">
@@ -97,8 +97,8 @@ export default {};
         <div class="card col-4 relative">
           <div class="relative">
             <div class="block">
-              <img class="img-smile" src="./img/Phase_1.png" alt="" />
-              <img class="img-cursed" src="./img/Phase_2.jpg" alt="" />
+              <img class="img-smile" src="../assets/Phase_1.png" alt="" />
+              <img class="img-cursed" src="../assets/Phase_2.jpg" alt="" />
             </div>
             <div class="absolute badge preferiti">&hearts;</div>
             <div class="lable-position absolute">
@@ -115,8 +115,8 @@ export default {};
         <div class="card col-4 relative">
           <div class="relative">
             <div class="block">
-              <img class="img-smile" src="./img/Phase_1.png" alt="" />
-              <img class="img-cursed" src="./img/Phase_2.jpg" alt="" />
+              <img class="img-smile" src="../assets/Phase_1.png" alt="" />
+              <img class="img-cursed" src="../assets/Phase_2.jpg" alt="" />
             </div>
             <div class="absolute badge preferiti">&hearts;</div>
             <div class="lable-position absolute">
