@@ -13,12 +13,10 @@ export default {
           "isInFavorites": true,
           "badges": [
             {
-              "type": "tag",
               "value": "Sostenibilità",
             },
             {
-              "type": "discount",
-              "value": "-50%",
+              "discount": -50,
             },
           ],
         },
@@ -32,8 +30,7 @@ export default {
           "isInFavorites": true,
           "badges": [
             {
-              "type": "discount",
-              "value": "-30%",
+              "discount": -30,
             },
           ],
         },
@@ -47,8 +44,7 @@ export default {
           "isInFavorites": false,
           "badges": [
             {
-              "type": "discount",
-              "value": "-30%",
+              "discount": -30,
             },
           ],
         },
@@ -62,12 +58,10 @@ export default {
           "isInFavorites": false,
           "badges": [
             {
-              "type": "tag",
               "value": "Sostenibilità",
             },
             {
-              "type": "discount",
-              "value": "-50%",
+              "discount": -50,
             },
           ],
         },
@@ -81,12 +75,10 @@ export default {
           "isInFavorites": true,
           "badges": [
             {
-              "type": "tag",
               "value": "Sostenibilità",
             },
             {
-              "type": "discount",
-              "value": "-50%",
+              "discount": -50,
             },
           ],
         },
@@ -100,7 +92,6 @@ export default {
           "isInFavorites": true,
           "badges": [
             {
-              "type": "tag",
               "value": "Sostenibilità",
             },
           ],
@@ -122,14 +113,42 @@ export default {
           </div>
           <div class="absolute badge preferiti">&hearts;</div>
           <div class="lable-position absolute">
-            <div class="badge inblock sconto">-50%</div>
-            <div class="badge inblock sost">Sostenibilità</div>
+            <div class="badge inblock sconto">
+              {{
+                prodotto.badges[prodotto.badges.length - 1].discount !==
+                "Sostenibilità"
+                  ? prodotto.badges[prodotto.badges.length - 1].discount
+                  : ""
+              }}
+            </div>
+            <div class="badge inblock sost">
+              {{
+                prodotto.badges[0].value === "Sostenibilità"
+                  ? prodotto.badges[0].value
+                  : ""
+              }}
+            </div>
           </div>
         </div>
         <span class="block Marca">{{ prodotto.brand }}</span>
         <span class="block Nome-item">{{ prodotto.name }}</span>
         <span class="block prezzo"
-          >14,99&euro; <s class="presconto">{{ prodotto.price }}</s>
+          >{{
+            (prodotto.badges[prodotto.badges.length - 1].discount === -50
+              ? (prodotto.price * 50) / 100
+              : prodotto.badges[prodotto.badges.length - 1].discount === -30
+              ? (prodotto.price * 30) / 100
+              : prodotto.price
+            ).toFixed(2)
+          }}&euro;
+          <s class="presconto"
+            >{{
+              prodotto.badges[prodotto.badges.length - 1].discount !== -50 &&
+              prodotto.badges[prodotto.badges.length - 1].discount !== -30
+                ? ""
+                : prodotto.price
+            }}€</s
+          >
         </span>
       </div>
     </div>
